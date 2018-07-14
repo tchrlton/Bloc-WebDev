@@ -10,7 +10,7 @@ fetch(url)
     body.appendChild(storyList);
     data.articles.map (news => {
       let newsItem = document.createElement('li');
-      newsItem.innerHTML = '<a href="' + news.href + '">' + news.title + "</a>";
+      newsItem.innerHTML = '<a href="' + news.url + '">' + news.title + "</a>";
       storyList.appendChild(newsItem);
     });
    })
